@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mode-toggle">
+    <button id="toggle-mode" aria-label="Toggle light/dark mode">🌙</button>
+  </div>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div id="adv-panel" class="adv-panel" style="display:none;">
+      <button data-action="sin">sin</button>
+      <button data-action="cos">cos</button>
+      <button data-action="tan">tan</button>
+      <button data-action="log">log</button>
+      <button data-action="ln">ln</button>
+      <button data-action="exp">eˣ</button>
+      <button data-action="pi">π</button>
+      <button data-action="fact">n!</button>
+      <button data-action="pow">xʸ</button>
+      <button data-action="close-adv" class="close-adv">✖</button>
+    </div>
+    <div class="buttons">
+      <button class="clear" data-action="clear">C</button>
+      <button data-action="backspace">⌫</button>
+      <button class="operator" data-value="/">÷</button>
+      <button class="operator" data-value="*">×</button>
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="-">−</button>
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="+">+</button>
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value=".">.</button>
+      <button data-action="square">x²</button>
+      <button data-value="0" style="grid-column: span 2;">0</button>
+      <button data-action="sqrt">√</button>
+      <button id="adv-btn" title="Advanced Math">🧮</button>
+      <button id="dino-btn" title="Play Dino Game">🦖</button>
+      <button class="equals" data-action="equals">=</button>
+    </div>
+    <audio id="click-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9b5bfa.mp3"></audio>
+  </div>
+  <div id="dino-game" class="dino-game" style="display:none;"></div>
+  <footer>
+    <span>2025 &copy; <a href="https://instagram.com/programmer_uz01" target="_blank">@programmer_uz01</a></span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
